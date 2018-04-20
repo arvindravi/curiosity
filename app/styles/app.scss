@@ -38,3 +38,27 @@ p {
   font-family: 'Source Sans Serif Pro', serif;
   line-height: 23px;
 }
+
+.hero.sp, footer {
+  background-image: url('/assets/images/nb.png');
+  background-repeat: repeat;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffdd57;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffdd57;
+}
+
+body {
+  background-image: url('/assets/images/crossword.png');
+  background-repeat: repeat;
+}
