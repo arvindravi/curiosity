@@ -1,0 +1,14 @@
+<section class="hero is-medium is-dark is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{params.title}}
+      </h1>
+      {{#if params.text}}
+        <p>{{params.text}}</p>
+      {{else}}
+        <h4 class="sub-header has-text-warning">{{params.subtitle}}</h4>
+      {{/if}}
+    </div>
+  </div>
+</section>

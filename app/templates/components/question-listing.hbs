@@ -1,0 +1,48 @@
+<section>
+  <div class="container">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+        <article class="tile is-child box">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <div class="content is-small">
+                  <h4 class="sub-header question-title is-marginless" {{action 'toggleBody'}}>{{question.title}}</h4>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                {{#if isExpanded}}
+                  <a {{action 'toggleBody'}}><img src='iconic/svg/minus.svg' alt='minus'></a>
+                {{else}}
+                  <a {{action 'toggleBody'}}><img src='iconic/svg/plus.svg' alt='plus'></a>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+          {{#if isExpanded}}
+          <div class="columns">
+            <div class="column">
+              <div class="content">
+                <p class="question-body">{{question.text}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-2 is-offset-10">
+              <div class="content level-right">
+                {{#link-to 'question' question.id}}
+                  <span class="has-text-warning">
+                    <img src='iconic/svg/arrow-circle-right.svg' class='icon is-small' alt='arrow-circle-right'>
+                  </span>
+                {{/link-to}}
+              </div>
+            </div>
+          </div>
+        {{/if}}
+				</article>
+			</div>
+		</div>
+  </div>
+</section>
