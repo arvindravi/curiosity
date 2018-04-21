@@ -22,13 +22,22 @@
             </div>
           </div>
           {{#if isExpanded}}
-          <div class="columns">
-            <div class="column">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-128x128">
+              <img src="{{question.image}}">
+              </p>
+            </figure>
+            <div class="media-content">
               <div class="content">
-                <p class="question-body">{{question.text}}</p>
+                <p>
+                <strong>Question</strong> <small> by <b>{{question.author}}</b> </small>
+                  <br>
+                  {{question.text}}
+                </p>
               </div>
             </div>
-          </div>
+          </article>
           <div class="columns">
             <div class="column is-2 is-offset-10">
               <div class="content level-right">

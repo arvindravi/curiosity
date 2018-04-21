@@ -6,11 +6,23 @@
     </div>
     <div class="content">
     {{#each model.comments as |comment|}}
-      <div class="box">
-        <div class="has-text-justified">
-          <p>{{comment.text}}</p>
+			<article class="media">
+				<figure class="media-left">
+					<p class="image is-64x64">
+          <img src="{{comment.avatar}}">
+					</p>
+				</figure>
+				<div class="media-content">
+					<div class="content">
+						<p>
+            <strong>{{comment.author}}</strong> <small>{{comment.handle}}</small> 
+            <img src='/iconic/svg/clock.svg' alt='clock'><small> 31M</small>
+							<br>
+						  {{comment.text}}	
+						</p>
+					</div>
         </div>
-      </div>
+			</article>
     {{/each}}
     </div>
   </div>

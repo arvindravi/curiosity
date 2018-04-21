@@ -21,7 +21,7 @@ h1 {
 
 h4.sub-header {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -39,12 +39,17 @@ p {
   line-height: 23px;
 }
 
+.media-content > .content > p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
 .hero.sp, footer {
   background-image: url('/assets/images/nb.png');
   background-repeat: repeat;
 }
 
-footer {
+footer p {
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
 }
 

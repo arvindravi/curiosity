@@ -2,8 +2,8 @@
 <section class="section">
   <div class="container">
     <div class="content">
-      {{#each model as |q|}}
-        {{question-listing question=q}}
+      {{#each model as |question|}}
+        {{question-listing question=question}}
       {{/each}}
     </div>
   </div>

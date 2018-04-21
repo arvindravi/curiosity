@@ -7,7 +7,17 @@
       {{#if params.text}}
         <p>{{params.text}}</p>
       {{else}}
-        <h4 class="sub-header has-text-warning">{{params.subtitle}}</h4>
+      <h4 class="sub-header has-text-warning">{{params.subtitle}}</h4>
+      {{/if}}
+      <br>
+      {{#if params.author}}
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            by {{params.author}}
+          </div>
+        </div>
+      </div>
       {{/if}}
     </div>
   </div>
