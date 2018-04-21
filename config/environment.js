@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'hn',
-    environment,
+    environment: process.env.EMBER_ENV,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
